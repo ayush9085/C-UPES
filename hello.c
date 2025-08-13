@@ -1,3 +1,4 @@
+// This program prints the details of a student
 #include <stdio.h>
 
 int main() {
