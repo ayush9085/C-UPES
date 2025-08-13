@@ -1,17 +1,10 @@
- #include <stdio.h>
-int main(){
-    int a,b,sum;
-    printf("Enter first number");
-    scanf("%d",&a);
-    printf("Enter second number");
-    scanf("%d",&b);
-    sum=a+b;
-    if (sum>0){
-        printf("sum is positive\n");
-    } else if (sum<0){
-        printf("sum is negative\n");
-    } else {
-        printf("sum is zero\n");
-    }
+#include <stdio.h>
+
+int main() {
+    printf("Name: Ayush Pandey\n");
+    printf("SAPID: 590025156\n");
+    printf("Course: Btech.CSE \n");
+    printf("Batch: B10\n");
+    printf("University: UPES\n");
     return 0;
 }
