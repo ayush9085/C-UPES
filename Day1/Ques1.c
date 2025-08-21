@@ -18,5 +18,5 @@ int main (){
     printf("Enter 2nd Number.");
     scanf("%d",&b);
     Sum=a+b;
-    printf("The Sum of both Number is:%d", Sum);
+    printf("The Sum of both Number is:%d\n", Sum);
 }
