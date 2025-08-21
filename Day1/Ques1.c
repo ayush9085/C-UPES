@@ -19,4 +19,5 @@ int main (){
     scanf("%d",&b);
     Sum=a+b;
     printf("The Sum of both Number is:%d\n", Sum);
+    return 0;
 }
