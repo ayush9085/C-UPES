@@ -21,10 +21,10 @@ int main(){
     difference=Num1-Num2;
     product=Num1*Num2;
     quotient=Num1/Num2;
-    printf("The Sum is:%d", &sum);
-    printf("The Difference is:%d",&difference);
-    printf("The product is:%d", &product);
-    printf("The Quotient is:%d",&quotient);
+    printf("The Sum is:%d", sum);
+    printf("The Difference is:%d",difference);
+    printf("The product is:%d", product);
+    printf("The Quotient is:%d",quotient);
     return 0;
     
 
