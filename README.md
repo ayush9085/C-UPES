@@ -10,3 +10,6 @@ The code is organized into folders for quick reference and to track my progress 
 
 ## Goal
 To maintain a clean, version-controlled archive of everything I create while learning C, from basic syntax exercises to full projects.
+
+
+ 
