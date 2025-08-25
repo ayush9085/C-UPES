@@ -17,15 +17,15 @@ Simple Interest=1050, Compound Interest=1125.76
 #include <math.h>//for calculating power of
 
 int main() {
-    float principal, rate, time, SI, CI;
+    float principal, rate, time, SI, CI;//initializing variables
     printf("Enter Principal Amount: ");
     scanf("%f",&principal);
     printf("Enter Rate: ");
     scanf("%f", &rate);
     printf("Enter TIme: ");
     scanf("%f" , &time);
-    SI = (principal * rate * time) / 100;
-    CI = principal * pow((1 + rate / 100), time) - principal;
-    printf("Simple Interest=%.2f, Compound Interest=%.2f\n", SI, CI);
+    SI = (principal * rate * time) / 100;//calculated simple interest
+    CI = principal * pow((1 + rate / 100), time) - principal;//calculateed acompound interest
+    printf("Simple Interest=%.2f, Compound Interest=%.2f\n", SI, CI);//printed the values
     return 0;
 }
