@@ -23,12 +23,12 @@ int main(){
     printf("Input an Integer: ");
     scanf("%d", &Num);
     if(Num>=0){
-        if(Num==0){
+        if(Num==0){//nested loop
             printf("Zero");
         }
         else{
             printf("Positive");
-        }
+        }//nested loop ended
      }
      else{
         printf("Negative");
