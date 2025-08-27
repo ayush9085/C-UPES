@@ -20,7 +20,7 @@ int main (){
     //converting uppercase to lower case well to check for only one case
     ch = tolower(ch);
     if (ch >= 'a' && ch <= 'z'){//checking if char is alphabet or not
-        if( ch=='a'|| ch== 'e' || ch== 'i' || ch=='o' || ch== 'u'){
+        if( ch=='a'|| ch== 'e' || ch== 'i' || ch=='o' || ch== 'u'){//checking for vowel
             printf("Alphabet is Vowel");
         }
         else{
