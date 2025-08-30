@@ -11,5 +11,39 @@ Input 2:
 Output 2:
 Friday
 */
+#include <stdio.h>
+int main(){
+    int Num;
+    printf("Enter the Number :");
+    scanf("%d", &Num);
+    switch(Num){
+        case 7:
+            printf("Sunday\n");
+            break;
+        case 1:
+            printf("Monday\n");
+            break;
+        case 2:
+            printf("Tuesday\n");
+            break;
+        case 3:
+            printf("Wedenesday\n");
+            break;
+        case 4:
+            printf("Thursday\n");
+            break;
+        case 5:
+            printf("Friday\n");
+            break;
+        case 6:
+            printf("Saturday\n");
+            break;
+             
+        default:
+            printf("Invalid choice.\n");
+    }
+    
+    }
+
 
  
