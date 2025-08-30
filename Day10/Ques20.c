@@ -1,56 +1,15 @@
-/*Q19: Write a program to classify a triangle as Equilateral, Isosceles, or Scalene based on its side lengths.
-
+//Q20: Write a program to display the day of the week based on a number (1–7) using switch-case.
+/*
 Sample Test Cases:
 Input 1:
-3 3 3
+1
 Output 1:
-Equilateral
+Monday
 
 Input 2:
-3 3 4
+5
 Output 2:
-Isosceles
-
-Input 3:
-2 3 4
-Output 3:
-Scalene
+Friday
 */
-#include <stdio.h>
-int main() {
-    int side1, side2, side3;
-    printf("Enter First side of Triangle: ");
-    scanf("%d", &side1);
-    printf("Enter Second side of Triangle: ");
-    scanf("%d", &side2);
-    printf("Enter Third side of Triangle: ");
-    scanf("%d", &side3);
 
-    if (side1 + side2 > side3 &&
-        side2 + side3 > side1 &&
-        side1 + side3 > side2) {
-        printf("Valid Triangle\n");
-
-        // Equilateral
-        if (side1 == side2 && side2 == side3) {
-            printf("Equilateral triangle\n");
-        } else {
-            // Isosceles
-            if (side1 == side2 || side2 == side3 || side1 == side3) {
-                printf("Isosceles triangle\n");
-            } else {
-                printf("Scalene triangle\n");
-            }
-        }
-
-        // Right-angled (can be isosceles or scalene)
-        if (side1*side1 + side2*side2 == side3*side3 ||
-            side2*side2 + side3*side3 == side1*side1 ||
-            side1*side1 + side3*side3 == side2*side2) {
-            printf("Right Angle Triangle\n");
-        }
-    } else {
-        printf("Not a Valid Triangle\n");
-    }
-    return 0;
-}
+ 
