@@ -35,6 +35,7 @@ int main(){
     }
     else{
         printf("No Profit No Loss");
+    
     }
 
     return 0;
