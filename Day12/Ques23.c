@@ -21,3 +21,31 @@ Input 4:
 Output 4:
 Membership Cancelled
 */
+
+#include <stdio.h>
+
+int main() {
+    int days;
+    printf("Enter the number of late days: ");
+    scanf("%d", &days);
+
+    int fine = 0;
+
+    if (days <= 5) {
+        fine = days * 2;  // ₹2 per day
+        printf("Fine ₹%d\n", fine);
+    } 
+    else if (days <= 10) {
+        fine = days * 4;  // ₹4 per day
+        printf("Fine ₹%d\n", fine);
+    } 
+    else if (days <= 30) {
+        fine = days * 6;  // ₹6 per day
+        printf("Fine ₹%d\n", fine);
+    } 
+    else {
+        printf("Membership Cancelled\n");
+    }
+
+    return 0;
+}
