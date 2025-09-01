@@ -18,7 +18,7 @@ Bill: ₹2200
 */
 #include <stdio.h>
 
-int main() {
+int main(){
     int units, bill = 0;
 
     printf("Enter units consumed: ");
@@ -35,6 +35,8 @@ int main() {
     }
 
     printf("Bill: ₹%d\n", bill);
+    #include <stdio.h>
 
-    return 0;
+ 
 }
+ 
