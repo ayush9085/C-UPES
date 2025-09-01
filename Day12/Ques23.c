@@ -20,5 +20,4 @@ Input 4:
 31
 Output 4:
 Membership Cancelled
-
 */
