@@ -22,8 +22,12 @@ int main() {
     int num1, num2;
     char op;
 
-    printf("Enter two numbers and an operator (+, -, *, /, %): ");
-    scanf("%d %d %c", &num1, &num2, &op);
+    printf("Enter First Number: ");
+    scanf("%d", &num1);
+    printf("Enter Second Number: ");
+    scanf("%d", &num2);
+    printf("Enter Operator (+, -, *, /, %): ");
+    scanf(" %c", &op);
 
     switch (op) {
         case '+':
