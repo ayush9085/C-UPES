@@ -17,7 +17,7 @@ Output 2:
 int main() {
     int Num;
 
-    printf("Enter the value of n: ");
+    printf("Enter the Number: ");
     scanf("%d", &Num);
 
     for (int i = 1; i <= Num; i++) {
