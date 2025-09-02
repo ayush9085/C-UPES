@@ -16,12 +16,12 @@ Output 2:
 #include <stdio.h>
 
 int main() {
-    int limit;
+    int Num;
 
     printf("Enter the value of n: ");
-    scanf("%d", &limit);
+    scanf("%d", &Num);
 
-    for (int i = 1; i <= limit; i++) {
+    for (int i = 1; i <= Num; i++) {
         printf("%d ", i);
     }
 
