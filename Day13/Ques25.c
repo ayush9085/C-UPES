@@ -16,43 +16,38 @@ Input 3:
 Output 3:
 3
 */
-#include <stdio.h>
+ #include <stdio.h>
 
 int main() {
-    int num1, num2;
+    int a, b;
     char op;
 
-    printf("Enter First Number: ");
-    scanf("%d", &num1);
-    printf("Enter Second Number: ");
-    scanf("%d", &num2);
-    printf("Enter Operator (+, -, *, /, %): ");
+    printf("Enter First number: ");
+    scanf("%d", &a);
+
+    printf("Enter Second number: ");
+    scanf("%d", &b);
+
+    printf("Enter Operator (+, -, *, /, %%): "); 
     scanf(" %c", &op);
 
-    switch (op) {
-        case '+':
-            printf("%d\n", num1 + num2);
-            break;
-        case '-':
-            printf("%d\n", num1 - num2);
-            break;
-        case '*':
-            printf("%d\n", num1 * num2);
-            break;
-        case '/':
-            if (num2 != 0)
-                printf("%d\n", num1 / num2);
-            else
+    switch(op) {
+        case '+': printf("Result: %d\n", a + b); break;
+        case '-': printf("Result: %d\n", a - b); break;
+        case '*': printf("Result: %d\n", a * b); break;
+        case '/': 
+            if (b != 0) 
+                printf("Result: %d\n", a / b);
+            else 
                 printf("Error: Division by zero\n");
             break;
-        case '%':
-            if (num2 != 0)
-                printf("%d\n", num1 % num2);
-            else
+        case '%': 
+            if (b != 0) 
+                printf("Result: %d\n", a % b);
+            else 
                 printf("Error: Modulo by zero\n");
             break;
-        default:
-            printf("Invalid operator\n");
+        default: printf("Invalid Operator\n");
     }
 
     return 0;
