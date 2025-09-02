@@ -1,6 +1,7 @@
 //Q26: Write a program to print numbers from 1 to n.
 /*
 Sample Test Cases:
+
 Input 1:
 5
 Output 1:
