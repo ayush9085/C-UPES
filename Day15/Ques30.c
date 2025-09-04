@@ -19,9 +19,9 @@ int main() {
     scanf("%d", &Num);
 
     while (Num > 0) {
-        digit = Num % 10;        // last digit
-        rev = rev * 10 + digit;  // append digit
-        Num = Num / 10;          // remove last digit
+        digit = Num % 10;        
+        rev = rev * 10 + digit;  
+        Num = Num / 10;          
     }
 
     printf("Reversed number: %d\n", rev);
