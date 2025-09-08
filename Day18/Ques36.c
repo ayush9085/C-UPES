@@ -19,8 +19,10 @@ int main() {
     int a, b;
 
     // Input
-    printf("Enter two numbers: ");
-    scanf("%d %d", &a, &b);
+    printf("Enter First numbers: ");
+    scanf(" %d", &a);
+    printf("Enter First numbers: ");
+    scanf("%d ", &b);
 
     // Boundary check
     if (a <= 0 || b <= 0) {
