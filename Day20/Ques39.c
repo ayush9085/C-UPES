@@ -13,3 +13,26 @@ Output 2:
 1 (no odd digits, assume 1)
 
 */
+#include <stdio.h>
+
+int main() {
+    int num, digit, product = 1;
+    int hasOdd = 0; // flag to check if odd digit exists
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    while (num > 0) {
+        digit = num % 10;
+        if (digit % 2 != 0) {   // check if odd
+            product *= digit;
+            hasOdd = 1;
+        }
+        num /= 10;
+    }
+
+    // If no odd digit found, product remains 1
+    printf("Product of odd digits: %d\n", product);
+
+    return 0;
+}
