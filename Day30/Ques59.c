@@ -14,7 +14,7 @@ Output 2:
 Even=4, Odd=0
 
 */
- #include <stdio.h>
+  #include <stdio.h>
 int main(){
     int n,count1=0,count2=0;
     printf("How many inputs?");
