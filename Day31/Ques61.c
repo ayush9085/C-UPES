@@ -29,6 +29,18 @@ int main(){
     printf("Entered Values are :\n");
     int arr[n];
     for(i=0;i<n;i++){
-        scanf("%d" , &arr[i]);
+        printf("%d " , &arr[i]);
     }
+    printf("Enter the Number you want to search in Array :");
+    scanf("%d" , &x);;
+    for(i=0;i<n;i++){
+        if(arr[i]==x){
+            printf("Found at index %d" , i\n);
+        }
+        else{
+            printf("-1");
+        }
+    }
+
+
 }
