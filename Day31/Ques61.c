@@ -18,29 +18,30 @@ Output 2:
 */
 #include <stdio.h>
 int main(){
-    int n,x,i;
+    int n, x, i, found = 0;
     printf("Enter the length of the Array :");
-    scanf("%d" , &n);
+    scanf("%d", &n);
     printf("Enter the Values in Array\n");
     int arr[n];
-    for(i=0;i<n;i++){
-        scanf("%d" , &arr[i]);
+    for(i = 0; i < n; i++){
+        scanf("%d", &arr[i]);
     }
     printf("Entered Values are :\n");
-    
-    for(i=0;i<n;i++){
-        printf("%d " , arr[i]);
+    for(i = 0; i < n; i++){
+        printf("%d ", arr[i]);
     }
-    printf("Enter the Number you want to search in Array :");
-    scanf("%d" , &x);;
-    for(i=0;i<n;i++){
-        if(arr[i]==x){
-            printf("Found at index %d\n" , i);
-        }
-        else{
-            printf("-1");
+    printf("\nEnter the Number you want to search in Array :");
+    scanf("%d", &x);
+
+    for(i = 0; i < n; i++){
+        if(arr[i] == x){
+            printf("Found at index %d\n", i);
+            found = 1;
+            break; // Stop after first match
         }
     }
-
-
+    if(!found){
+        printf("-1\n");
+    }
+    return 0;
 }
