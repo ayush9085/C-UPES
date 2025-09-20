@@ -35,7 +35,7 @@ int main(){
     scanf("%d" , &x);;
     for(i=0;i<n;i++){
         if(arr[i]==x){
-            printf("Found at index %d" , i\n);
+            printf("Found at index %d\n" , i);
         }
         else{
             printf("-1");
