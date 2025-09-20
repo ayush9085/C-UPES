@@ -19,5 +19,16 @@ Output 2:
 #include <stdio.h>
 int main(){
     int n,x,i;
-    printf;
+    printf("Enter the length of the Array :");
+    scanf("%d" , &n);
+    printf("Enter the Values in Array\n");
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d" , &arr[i]);
+    }
+    printf("Entered Values are :\n");
+    int arr[n];
+    for(i=0;i<n;i++){
+        scanf("%d" , &arr[i]);
+    }
 }
