@@ -49,3 +49,24 @@ int main() {
     }
     return 0;
 }
+
+//by strcat
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char arr1[100], arr2[100];
+
+    printf("Enter first string: ");
+    scanf("%s", arr1);
+
+    printf("Enter second string: ");
+    scanf("%s", arr2);
+
+    // strcat merges arr2 into arr1
+    strcat(arr1, arr2);
+
+    printf("Merged String: %s\n", arr1);
+
+    return 0;
+}
