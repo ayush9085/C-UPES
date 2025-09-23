@@ -9,3 +9,7 @@ Output 1:
 10 20 15 30 40
 
 */
+#include <stdio.h>
+int main(){
+    
+}
