@@ -1,6 +1,5 @@
-Q68: Delete an element from an array.
+/*Q68: Delete an element from an array.
 
-/*
 Sample Test Cases:
 Input 1:
 5
