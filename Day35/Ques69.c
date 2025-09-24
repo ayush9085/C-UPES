@@ -1,6 +1,5 @@
-Q69: Find the second largest element in an array.
+/*Q69: Find the second largest element in an array.
 
-/*
 Sample Test Cases:
 Input 1:
 5
