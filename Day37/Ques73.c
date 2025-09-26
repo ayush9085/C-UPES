@@ -1,6 +1,5 @@
-Q73: Find the sum of each row of a matrix and store it in an array.
+/*Q73: Find the sum of each row of a matrix and store it in an array.
 
-/*
 Sample Test Cases:
 Input 1:
 2 3
