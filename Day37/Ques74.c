@@ -1,6 +1,5 @@
-Q74: Find the transpose of a matrix.
+/*Q74: Find the transpose of a matrix.
 
-/*
 Sample Test Cases:
 Input 1:
 2 3
