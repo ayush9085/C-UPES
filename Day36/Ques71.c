@@ -1,6 +1,5 @@
 /*Q71: Read and print a matrix.
 
-/*
 Sample Test Cases:
 Input 1:
 2 2
