@@ -48,5 +48,21 @@ int main() {
     scanf("%d %d", &r1, &c1);
     int a[r1][c1];
     readMatrix(r1, c1, a);
+scanf("%d %d", &r2, &c2);
+    int b[r2][c2];
+    readMatrix(r2, c2, b);
+
+    if(r1 != r2 || c1 != c2) {
+        printf("Matrix addition not possible\n");
+        return 0;
+    }
+
+    int sum[r1][c1];
+    addMatrices(r1, c1, a, b, sum);
+
+    printMatrix(r1, c1, sum);
+
+    return 0;
+}
 
      
