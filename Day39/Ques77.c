@@ -1,4 +1,4 @@
-//Q77: Check if the elements on the diagonal of a matrix are distinct.
+/*Q77: Check if the elements on the diagonal of a matrix are distinct.
 Sample Test Cases:
 Input 1:
 3 3
