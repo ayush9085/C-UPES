@@ -1,6 +1,5 @@
- Q80: Multiply two matrices.
-
-/*
+ /*Q80: Multiply two matrices.
+ 
 Sample Test Cases:
 Input 1:
 2 3
