@@ -1,6 +1,5 @@
 Q79: Perform diagonal traversal of a matrix.
 
-/*
 Sample Test Cases:
 Input 1:
 3 3
