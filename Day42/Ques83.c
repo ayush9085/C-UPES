@@ -1,4 +1,4 @@
-Q/*83: Count vowels and consonants in a string.
+/*Q83: Count vowels and consonants in a string.
 
 Sample Test Cases:
 Input 1:
