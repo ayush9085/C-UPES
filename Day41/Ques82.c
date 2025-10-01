@@ -1,6 +1,6 @@
-Q82: Print each character of a string on a new line.
+/*Q82: Print each character of a string on a new line.
 
-/*
+
 Sample Test Cases:
 Input 1:
 Hi
