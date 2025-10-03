@@ -1,4 +1,4 @@
-Q85: Reverse a string.
+/*Q85: Reverse a string.
 
 /*
 Sample Test Cases:
