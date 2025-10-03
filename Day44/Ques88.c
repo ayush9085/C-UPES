@@ -1,4 +1,4 @@
-Q88: Replace spaces with hyphens in a string.
+/*Q88: Replace spaces with hyphens in a string.
 
 Sample Test Cases:
 Input 1:
