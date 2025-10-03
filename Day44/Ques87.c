@@ -1,6 +1,5 @@
-Q87: Count spaces, digits, and special characters in a string.
+/*Q87: Count spaces, digits, and special characters in a string.
 
-/*
 Sample Test Cases:
 Input 1:
 a b1&2
