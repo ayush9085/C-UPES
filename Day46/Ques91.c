@@ -1,4 +1,4 @@
-Q91: Remove all vowels from a string.
+/*Q91: Remove all vowels from a string.
 
 /*
 Sample Test Cases:
