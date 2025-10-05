@@ -1,4 +1,4 @@
-Q92: Find the first repeating lowercase alphabet in a string.
+/*Q92: Find the first repeating lowercase alphabet in a string.
 
 /*
 Sample Test Cases:
