@@ -1,6 +1,5 @@
 /*Q93: Check if two strings are anagrams of each other.
 
-/*
 Sample Test Cases:
 Input 1:
 listen
