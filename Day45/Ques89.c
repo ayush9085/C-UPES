@@ -20,7 +20,7 @@ int main() {
     scanf("%s", str);
 
     // Input character
-    scanf(" %c", &ch); // Notice the space before %c to skip newline/whitespace
+    scanf(" %c", &ch); 
 
     // Count frequency
     for (int i = 0; str[i] != '\0'; i++) {
