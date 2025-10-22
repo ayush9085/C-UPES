@@ -17,3 +17,41 @@ Output 3:
 25
 
 */
+#include <stdio.h>
+
+int maxSubarraySum(int *arr, int n) {
+    int max_so_far = *(arr);
+    int current_max = *(arr);
+
+    for (int i = 1; i < n; i++) {
+        int val = *(arr + i);
+        if (current_max + val > val)
+            current_max = current_max + val;
+        else
+            current_max = val;
+
+        if (current_max > max_so_far)
+            max_so_far = current_max;
+    }
+
+    return max_so_far;
+}
+
+int main() {
+    int n;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    int *ptr = arr;
+
+    printf("Enter %d elements: ", n);
+    for (int i = 0; i < n; i++) {
+        scanf("%d", ptr + i);
+    }
+
+    int result = maxSubarraySum(ptr, n);
+    printf("Maximum subarray sum is: %d\n", result);
+
+    return 0;
+}
