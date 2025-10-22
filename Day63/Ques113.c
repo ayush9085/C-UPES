@@ -60,5 +60,16 @@ int main() {
 
     printf("Enter k: ");
     scanf("%d", &k);
+    if (k <= 0 || k > n) {
+        printf("Invalid k value!\n");
+        return 0;
+    }
+
+    int result = findKthSmallest(ptr, n, k);
+    printf("The %dth smallest element is: %d\n", k, result);
+
+    return 0;
+}
+
 
      
