@@ -31,7 +31,7 @@ int main() {
     int len1 = strlen(s1);
     int len2 = strlen(s2);
 
-    // Step 1: Convert both strings to lowercase
+     
     for (int i = 0; i < len1; i++) {
         s1[i] = tolower(s1[i]);
     }
@@ -39,16 +39,16 @@ int main() {
         s2[i] = tolower(s2[i]);
     }
 
-    // Step 2: Compare lengths
+     
     if (len1 != len2) {
         printf("Not Anagrams\n");
         return 0;
     }
-    //step 3: Sort both strings
+    
     qsort(s1, len1, sizeof(char), cmp);
     qsort(s2, len2, sizeof(char), cmp);
 
-    // Step 4: Compare sorted strings
+     
     int isAnagram = 1;
     for (int i = 0; i < len1; i++) {
         if (s1[i] != s2[i]) {
@@ -57,7 +57,7 @@ int main() {
         }
     }
 
-    // Step 5: Output result
+     
     if (isAnagram)
         printf("Anagrams\n");
     else
