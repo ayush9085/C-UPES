@@ -12,3 +12,7 @@ Output 2:
 Not Anagram
 
 */
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h> // for tolower()
