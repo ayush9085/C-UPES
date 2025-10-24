@@ -16,3 +16,7 @@ Not Anagram
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h> // for tolower()
+
+int cmp(const void *a, const void *b) {
+    return (*(char*)a - *(char*)b);
+}
