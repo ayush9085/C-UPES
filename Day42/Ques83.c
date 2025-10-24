@@ -26,8 +26,8 @@ int main() {
                 v++;
             else
                 c++;
-        }
-    }
+            }
+    
 
     printf("Vowels=%d, Consonants=%d\n", v, c);
     return 0;
