@@ -17,6 +17,39 @@ Output 3:
 0 1
 
 */
-#include <stdio.h>
-void twoSum
-int main(){}
+ #include <stdio.h>
+
+void findTwoSum(int nums[], int n, int target) {
+    int found = 0;  // flag to mark if pair found
+
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (nums[i] + nums[j] == target) {
+                printf("%d %d\n", i, j);
+                found = 1;
+                break; // breaks inner loop
+            }
+        }
+        if (found) break; // breaks outer loop
+    }
+
+    if (!found) {
+        printf("-1 -1\n"); // if no pair found
+    }
+}
+
+int main() {
+    int n;
+    scanf("%d", &n);
+    int nums[n];
+
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &nums[i]);
+    }
+
+    int target;
+    scanf("%d", &target);
+
+    findTwoSum(nums, n, target);  // call the function
+    return 0;
+}
