@@ -17,3 +17,6 @@ Output 3:
 0 1
 
 */
+#include <stdio.h>
+void twoSum
+int main(){}
