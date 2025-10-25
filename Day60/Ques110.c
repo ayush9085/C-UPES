@@ -1,6 +1,5 @@
-Q110: Write a program to take an integer array arr and an integer k as inputs. The task is to find the maximum element in each subarray of size k moving from left to right. Print the maximum elements for each window separated by spaces as output.
+/*Q110: Write a program to take an integer array arr and an integer k as inputs. The task is to find the maximum element in each subarray of size k moving from left to right. Print the maximum elements for each window separated by spaces as output.
 
-/*
 Sample Test Cases:
 Input 1:
 arr[1, 2, 3, 1, 4, 5, 2, 3, 6] = , k = 3
