@@ -1,6 +1,5 @@
-Q109: Write a program to take an integer array arr and an integer k as inputs. Print the maximum sum of all the subarrays of size k.
+/*Q109: Write a program to take an integer array arr and an integer k as inputs. Print the maximum sum of all the subarrays of size k.
 
-/*
 Sample Test Cases:
 Input 1:
 arr[100, 200, 300, 400] = , k = 2
