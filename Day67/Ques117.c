@@ -1,6 +1,5 @@
-Q117: Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array.
+/*Q117: Write a program to take two sorted arrays of size m and n as input. Merge both the arrays such that the merged array is also sorted. Print the merged array.
 
-/*
 Sample Test Cases:
 Input 1:
 nums1 = [2,7,11,15] nums2 = [4,8,10]
