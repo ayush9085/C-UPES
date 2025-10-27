@@ -17,3 +17,53 @@ Output 3:
 -10 -3 -2 -1 7 7
 
 */
+#include <stdio.h>
+
+void mergeSortedArrays(int nums1[], int m, int nums2[], int n) {
+    int merged[m + n];
+    int i = 0, j = 0, k = 0;
+
+    // Merge both arrays using for loop
+    for (; i < m && j < n; ) {
+        if (nums1[i] <= nums2[j])
+            merged[k++] = nums1[i++];
+        else
+            merged[k++] = nums2[j++];
+    }
+
+    // Copy remaining elements of nums1
+    for (; i < m; i++)
+        merged[k++] = nums1[i];
+
+    // Copy remaining elements of nums2
+    for (; j < n; j++)
+        merged[k++] = nums2[j];
+
+    // Print merged array
+    printf("Merged Sorted Array:\n");
+    for (int x = 0; x < m + n; x++)
+        printf("%d ", merged[x]);
+    printf("\n");
+}
+
+int main() {
+    int m, n;
+
+    printf("Enter size of first array: ");
+    scanf("%d", &m);
+    int nums1[m];
+    printf("Enter %d sorted elements for first array:\n", m);
+    for (int i = 0; i < m; i++)
+        scanf("%d", &nums1[i]);
+
+    printf("Enter size of second array: ");
+    scanf("%d", &n);
+    int nums2[n];
+    printf("Enter %d sorted elements for second array:\n", n);
+    for (int i = 0; i < n; i++)
+        scanf("%d", &nums2[i]);
+
+    mergeSortedArrays(nums1, m, nums2, n);
+
+    return 0;
+}
