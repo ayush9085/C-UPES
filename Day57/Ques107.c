@@ -26,3 +26,35 @@ Output 4:
 -1, 5, 4, 3
 
 */
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter the size of the array: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter the array elements:\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Output:\n");
+
+    for (int i = 0; i < n; i++) {
+        int prevGreater = -1; // Default when no greater element found
+        for (int j = i - 1; j >= 0; j--) { // Check elements on the left
+            if (arr[j] > arr[i]) {
+                prevGreater = arr[j];
+                break;
+            }
+        }
+        printf("%d", prevGreater);
+        if (i != n - 1)
+            printf(", ");
+    }
+
+    printf("\n");
+    return 0;
+}
