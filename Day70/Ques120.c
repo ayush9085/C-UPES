@@ -17,3 +17,30 @@ Output 3:
 We Are Going To Look At 26 Different Test Cases.
 
 */
+#include <stdio.h>
+#include <ctype.h>
+
+int main() {
+    char str[200];
+    printf("Enter a string: ");
+    fgets(str, sizeof(str), stdin);
+
+    int i = 0;
+    int capitalizeNext = 1; // flag to capitalize the first letter of each word
+
+    while (str[i] != '\0') {
+        if (capitalizeNext && isalpha(str[i])) {
+            str[i] = toupper(str[i]);
+            capitalizeNext = 0;
+        } else if (str[i] == ' ') {
+            capitalizeNext = 1;
+        } else {
+            str[i] = tolower(str[i]);
+        }
+        i++;
+    }
+
+    printf("Output:\n%s", str);
+
+    return 0;
+}
