@@ -1,4 +1,4 @@
-Q120: Write a program to take a string input. Change it to sentence case.
+/*Q120: Write a program to take a string input. Change it to sentence case.
 
 /*
 Sample Test Cases:
