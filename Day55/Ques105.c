@@ -16,3 +16,34 @@ nums = [2,2,1,1,1,2,2,3]
 Output 3:
 -1
 */
+#include <stdio.h>
+
+int main() {
+    int n;
+    printf("Enter size of array: ");
+    scanf("%d", &n);
+
+    int nums[n];
+    printf("Enter %d elements: ", n);
+    for(int i = 0; i < n; i++)
+        scanf("%d", &nums[i]);
+
+    int majorityElement = -1;  
+    int limit = n / 2;
+
+    for(int i = 0; i < n; i++) {
+        int count = 0;
+        for(int j = 0; j < n; j++) {
+            if(nums[i] == nums[j])
+                count++;
+        }
+        if(count > limit) {
+            majorityElement = nums[i];
+            break;
+        }
+    }
+
+    printf("%d", majorityElement);
+
+    return 0;
+}
