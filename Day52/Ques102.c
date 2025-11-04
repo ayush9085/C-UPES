@@ -21,3 +21,37 @@ arr = [1, 1, 2, 8, 10, 11, 12, 19], x = 2
 Output 4:
 2
 */
+#include <stdio.h>
+
+int main() {
+    int n, x;
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    int arr[n];
+    printf("Enter sorted array elements: ");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Enter x: ");
+    scanf("%d", &x);
+
+    int low = 0, high = n - 1;
+    int result = -1;
+
+    while (low <= high) {
+        int mid = (low + high) / 2;
+
+        if (arr[mid] >= x) {
+            result = mid;     // possible ceil
+            high = mid - 1;   // check if there’s a smaller index
+        } else {
+            low = mid + 1;
+        }
+    }
+
+    printf("%d\n", result);
+
+    return 0;
+}
