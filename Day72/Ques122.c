@@ -8,3 +8,28 @@ Name: Rahul
 Age: 23
 
 */
+#include <stdio.h>
+
+int main() {
+    FILE *file;
+    char line[256]; // Buffer to store each line
+
+    // Open the existing file in read mode
+    file = fopen("info.txt", "r");
+
+    // Check if file exists or opened successfully
+    if (file == NULL) {
+        printf("Error: Could not open file.\n");
+        return 1;
+    }
+
+    // Read and print each line until EOF
+    while (fgets(line, sizeof(line), file)) {
+        printf("%s", line);
+    }
+
+    // Close the file
+    fclose(file);
+
+    return 0;
+}
