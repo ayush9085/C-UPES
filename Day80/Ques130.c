@@ -10,3 +10,8 @@ Name: Ravi | Roll: 102 | Marks: 92
 */
 #include <stdio.h>
 
+struct student {
+    char name[50];
+    int roll;
+    int marks;
+};
