@@ -15,3 +15,36 @@ struct student {
     int roll;
     int marks;
 };
+int main() {
+    FILE *file;
+    struct student stu[2];
+
+    // Storing student records
+    file = fopen("students.txt", "w");
+    if (file == NULL) {
+        printf("Error opening file for writing.\n");
+        return 1;
+    }
+
+    for (int i = 0; i < 2; i++) {
+        printf("Enter details for student %d (Name Roll Marks): ", i + 1);
+        scanf("%s %d %d", stu[i].name, &stu[i].roll, &stu[i].marks);
+        fprintf(file, "%s %d %d\n", stu[i].name, stu[i].roll, stu[i].marks);
+    }
+    fclose(file);
+
+    // Reading and displaying student records
+    file = fopen("students.txt", "r");
+    if (file == NULL) {
+        printf("Error opening file for reading.\n");
+        return 1;
+    }
+
+    printf("\nStudent Records:\n");
+    while (fscanf(file, "%s %d %d", stu[0].name, &stu[0].roll, &stu[0].marks) != EOF) {
+        printf("Name: %s | Roll: %d | Marks: %d\n", stu[0].name, stu[0].roll, stu[0].marks);
+    }
+    fclose(file);
+
+    return 0;
+}
