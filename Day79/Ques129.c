@@ -31,7 +31,7 @@ int main() {
         count++;
     }
 
-    // Close the file
+
     fclose(fp);
 
     // Check if any numbers were read
