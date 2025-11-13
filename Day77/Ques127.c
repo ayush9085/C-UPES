@@ -1,10 +1,10 @@
-/*Q128: Read a text file and count how many vowels and consonants are in the file. Ignore digits and special characters.
+/*Q127: Write a program that reads text from input.txt, converts all lowercase letters to uppercase, and writes the result to output.txt.
 
+/*
 Sample Test Cases:
 Input 1:
-File: text.txt (Content: Welcome to C language)
+Input File (input.txt): Hello World\nC programming
 Output 1:
-Vowels: 8
-Consonants: 10
+Output File (output.txt): HELLO WORLD\nC PROGRAMMING
 
 */
