@@ -16,7 +16,7 @@ Fahrenheit=212
 
 #include <stdio.h>
 int main (){
-    int temp_in_c,temp_in_far;
+    int temp_in_c,temp_in_far ;
     printf("Enter temperature in Clesius");
     scanf("%d", &temp_in_c);
     temp_in_far=temp_in_c*9/5 +32;
