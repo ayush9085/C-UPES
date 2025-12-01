@@ -16,7 +16,7 @@ Output 2:
 #include <stdio.h>
 
 int main() {
-    int n, sum = 0, rem;
+    int n, sum = 0, rem ;
 
     printf("Enter a number: ");
     scanf("%d", &n);
