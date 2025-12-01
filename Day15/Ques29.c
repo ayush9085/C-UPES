@@ -13,7 +13,7 @@ Output 2:
 */
 #include <stdio.h>
 int main(){
-    int Num,factorial=1,i;
+    int Num,factorial=1,i ;
     printf("Enter the Number to claculate factorial :");
     scanf("%d" , &Num);
     for(i=1;i<=Num;i++){
