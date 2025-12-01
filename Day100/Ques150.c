@@ -10,7 +10,7 @@ Modified Data: Name: John | Roll: 106 | Marks: 91
 #include <stdio.h>
 
 struct Student {
-    char name[50];
+    char name[50] ;
     int roll;
     int marks;
 };
